@@ -1,0 +1,28 @@
+.navbar {
+    display: flex;
+    justify-content: center; /* Center navbar items horizontally */
+    background-color: rgb(36, 155, 84);
+    padding: 10px 20px; /* Adjust padding as needed */
+    width: 100%; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-logo {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+}
+
+.navbar-item {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px; /* Adjust padding for better spacing */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.navbar-item:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background on hover */
+}
+

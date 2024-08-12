@@ -1,0 +1,82 @@
+/* formStyles.css */
+
+.recipe-form {
+    max-width: 600px; /* Restrict the width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px; /* Padding around the form */
+    background: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .recipe-form h2 {
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center the heading text */
+    color: #333; /* Dark color for the heading */
+  }
+  
+  .form-group {
+    margin-bottom: 15px; /* Space between form groups */
+  }
+  
+  .form-group label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Space below the label */
+    font-weight: bold; /* Make label text bold */
+    color: #555; /* Darker color for labels */
+  }
+  
+  .form-group input {
+    width: 100%; /* Full width input fields */
+    padding: 10px; /* Padding inside input fields */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  .ingredient-group {
+    display: flex; /* Flex layout for ingredient inputs */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 10px; /* Space between ingredients */
+  }
+  
+  .ingredient-group input {
+    flex: 1; /* Make input fields take available space */
+    margin-right: 10px; /* Space between input field and button */
+  }
+  
+  .remove-btn,
+  .add-btn,
+  .submit-btn {
+    color: #fff; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 8px 16px; /* Padding inside buttons */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+
+  .remove-btn {
+    background-color: crimson;
+  }
+  
+  .remove-btn:hover,
+  .add-btn:hover,
+  .submit-btn:hover {
+    background-color: #62b300de; /* Darker shade on hover */
+  }
+  
+  .add-btn {
+    background-color: #28a745; /* Green color for add button */
+  }
+  
+  .add-btn:hover {
+    background-color: #218838; /* Darker shade on hover */
+  }
+  
+  .submit-btn {
+    width: 100%; /* Full width button */
+    margin-top: 20px; /* Space above the submit button */
+  }
+  

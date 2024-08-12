@@ -1,0 +1,56 @@
+/* styles.css */
+
+.recipes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Space between grid items */
+    padding: 20px; /* Space around the container */
+    max-width: 1200px; /* Maximum width of the grid container */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  .recipe-card {
+    position: relative; /* Position relative for absolute positioning of overlay */
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px; /* Rounded corners */
+    overflow: hidden; /* Ensure content fits within the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    text-decoration: none; /* Remove default underline from links */
+  }
+  
+  .recipe-card:hover {
+    transform: scale(1.05); /* Slightly scale up the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+  }
+  
+  .recipe-card img {
+    width: 100%; /* Ensure image covers the card width */
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Crop the image to fit */
+  }
+  
+  .recipe-info {
+    position: absolute; /* Position absolutely to overlay the image */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); /* Gradient from dark to transparent */
+    color: #fff; /* White text color */
+    padding: 20px; /* Padding around the text */
+    opacity: 0; /* Hide initially */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+    text-align: center; /* Center the text */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+  }
+  
+  .recipe-card:hover .recipe-info {
+    opacity: 1; /* Show the recipe info on hover */
+  }
+  
+  .recipe-info h2 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.5rem; /* Adjust font size */
+  }
+  
